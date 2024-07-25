@@ -1,0 +1,367 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 3px solid #555;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 30px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h2 {
+    font-size: 1.25em;
+    color: #333;
+    margin: 0 0 15px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    margin-top: 50px; 
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.containe {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+    min-width: 300px;
+    padding-top: 50px;
+}
+
+.about-image img {
+    width: 90%;
+    height: 400px;
+    border-radius: 8px;
+    display: block;
+}
+
+.about-text {
+    flex: 2;
+    max-width: 600px;
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+    text-align: start;
+
+}
+
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.75em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.125em;
+    color: #777;
+}
+
+
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+/* Facilities Section */
+.facilities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.facility-item {
+    flex: 1;
+    min-width: 200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.facility-item img {
+    max-width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Location Section */
+.location-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#map {
+    flex: 2;
+}
+
+#map iframe {
+    width: 90%;
+    height: 400px;
+    border: 0;
+}
+
+.location-image {
+    flex: 1;
+}
+
+.location-image img {
+    width: 90%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    flex: 1;
+    max-width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 50vh;
+}
+
+/* Contact Us Section */
+.contact-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.social-media .social-icon img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+}
